@@ -1,0 +1,1 @@
+<?xml version="1.0"?><RemoveSagaTimeout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/Sales"><timeSent>2020-01-29T21:12:10.8193618Z</timeSent></RemoveSagaTimeout>
