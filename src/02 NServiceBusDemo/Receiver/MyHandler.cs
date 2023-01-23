@@ -15,31 +15,32 @@ namespace Receiver
 
             Console.WriteLine($"I received message {message.Identifier} and might throw exception: {shouldThrowError}");
 
-            if (shouldThrowError)
-                throw new Exception("BOOM!");
+            // if (shouldThrowError)
+            //     throw new Exception("BOOM!");
         }
 
         #region ShouldIThrow
-        async Task<bool> ShouldIThrow()
+
+        static Task<bool> ShouldIThrow()
         {
             if (errorsThrownInARow >= 4)
             {
                 errorsThrownInARow = 0;
-                return false;
+                return Task.FromResult(false);
             }
 
             // Fifty-fifty chance to throw each time
-            if (random.Next(5) % 2 == 0)
+            if (Random.Next(5) % 2 == 0)
             {
                 errorsThrownInARow++;
-                return true;
+                return Task.FromResult(true);
             }
 
             errorsThrownInARow = 0;
-            return false;
+            return Task.FromResult(false);
         }
 
-        static Random random = new Random();
+        static readonly Random Random = new Random();
         static int errorsThrownInARow; // Only works with concurrency 
         #endregion 
     }
