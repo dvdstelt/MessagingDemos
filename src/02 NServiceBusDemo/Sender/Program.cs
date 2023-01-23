@@ -9,6 +9,7 @@ namespace Sender
     {
         static async Task Main(string[] args)
         {
+            Console.Title = "Sender";
             var endpointConfiguration = Configuration.GetConfiguration("Sender");
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration);

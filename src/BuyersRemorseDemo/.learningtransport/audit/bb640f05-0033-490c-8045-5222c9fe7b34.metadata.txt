@@ -1,0 +1,21 @@
+{
+  "NServiceBus.MessageId": "096e97b5-7f41-4879-b09d-af93015c57a7",
+  "NServiceBus.MessageIntent": "Publish",
+  "NServiceBus.RelatedTo": "6a7c9bda-ece1-426b-8aae-af93015c5759",
+  "NServiceBus.ConversationId": "63dd2094-d8ad-44d2-a3f3-af93015c56f4",
+  "NServiceBus.CorrelationId": "b964605c-969f-43a5-9e2f-af93015c56ef",
+  "NServiceBus.ReplyToAddress": "Billing",
+  "NServiceBus.OriginatingMachine": "NZXT",
+  "NServiceBus.OriginatingEndpoint": "Billing",
+  "$.diagnostics.originating.hostid": "2912388c8fa2890f64d74eecb9ec66b4",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "Billing.Messages.Events.OrderBilled, Billing.Messages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "8.0.3",
+  "NServiceBus.TimeSent": "2023-01-23 21:08:16:591254 Z",
+  "NServiceBus.ProcessingStarted": "2023-01-23 21:08:16:658370 Z",
+  "NServiceBus.ProcessingEnded": "2023-01-23 21:08:16:660577 Z",
+  "$.diagnostics.hostid": "d2850b150ad5428a7dc58d7b16d13bb3",
+  "$.diagnostics.hostdisplayname": "NZXT",
+  "NServiceBus.ProcessingMachine": "NZXT",
+  "NServiceBus.ProcessingEndpoint": "Shipping"
+}

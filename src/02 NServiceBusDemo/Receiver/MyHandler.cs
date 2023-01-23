@@ -14,7 +14,7 @@ namespace Receiver
             var shouldThrowError = await ShouldIThrow();
 
             Console.WriteLine($"I received message {message.Identifier} and might throw exception: {shouldThrowError}");
-            
+
             //if (shouldThrowError)
             //    throw new Exception("BOOM!");
         }
