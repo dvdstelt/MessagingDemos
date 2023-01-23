@@ -11,9 +11,7 @@ namespace Shared
         public static EndpointConfiguration GetConfiguration(string endpointName)
         {
             var endpointConfiguration = new EndpointConfiguration(endpointName);
-            //var transport = endpointConfiguration.UseTransport<LearningTransport>();
-            var transport = endpointConfiguration.UseTransport<SqlServerTransport>();
-            transport.ConnectionString(@"data source=localhost,1434; user id=sa; password=mNhzNtO64GdW; Initial Catalog=servicecontrol");
+            var transport = endpointConfiguration.UseTransport<LearningTransport>();
 
             transport.Routing().RouteToEndpoint(typeof(MyMessage).Assembly, "receiver");
 
