@@ -24,6 +24,12 @@ public static class EndpointConfigurationExtensions
         conventions.DefiningEventsAs(t =>
             t.Namespace != null && t.Namespace.Contains("Messages") && t.Namespace.EndsWith("Events"));
 
+        var metrics = endpointConfiguration.EnableMetrics();
+
+        metrics.SendMetricDataToServiceControl(
+            serviceControlMetricsAddress: "particular.monitoring",
+            interval: TimeSpan.FromSeconds(1));
+        
         endpointConfiguration.EnableInstallers();
 
         configureRouting?.Invoke(routing);

@@ -1,6 +1,6 @@
 ﻿namespace Sales.Messages.Commands;
 
-public class PlaceOrder
+public class SubmitOrder
 {
     public Guid Identifier { get; set; }
 }

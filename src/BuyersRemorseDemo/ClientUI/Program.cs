@@ -7,7 +7,7 @@ const string endpointName = "ClientUI";
 var endpointConfiguration = new EndpointConfiguration(endpointName);
 endpointConfiguration.Configure(s =>
 {
-    s.RouteToEndpoint(typeof(PlaceOrder), "Sales");
+    s.RouteToEndpoint(typeof(SubmitOrder), "Sales");
     s.RouteToEndpoint(typeof(CancelOrder), "Sales");
 });
 
@@ -31,7 +31,7 @@ static async Task RunLoop(IMessageSession endpointInstance)
         {
             case ConsoleKey.P:
                 // Instantiate the command
-                var command = new PlaceOrder
+                var command = new SubmitOrder
                 {
                     Identifier = Guid.NewGuid()
                 };

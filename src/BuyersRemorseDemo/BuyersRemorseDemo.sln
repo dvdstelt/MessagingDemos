@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientUI", "ClientUI\ClientUI.csproj", "{CF74A914-3EF5-4AB2-B8F7-C272EB6C1BB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform", "Platform\Platform.csproj", "{C185281D-BC35-43FD-B351-2EAFAD71ED70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{CF74A914-3EF5-4AB2-B8F7-C272EB6C1BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF74A914-3EF5-4AB2-B8F7-C272EB6C1BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF74A914-3EF5-4AB2-B8F7-C272EB6C1BB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C185281D-BC35-43FD-B351-2EAFAD71ED70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C185281D-BC35-43FD-B351-2EAFAD71ED70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C185281D-BC35-43FD-B351-2EAFAD71ED70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C185281D-BC35-43FD-B351-2EAFAD71ED70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

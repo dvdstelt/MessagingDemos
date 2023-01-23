@@ -8,12 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="NServiceBus.Extensions.Hosting" Version="2.0.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Sales.Messages\Sales.Messages.csproj" />
-      <ProjectReference Include="..\Shared\Shared.csproj" />
+      <PackageReference Include="Particular.PlatformSample" Version="2.20.0" />
     </ItemGroup>
 
 </Project>
